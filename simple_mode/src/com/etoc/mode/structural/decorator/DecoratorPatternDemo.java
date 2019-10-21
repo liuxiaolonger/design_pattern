@@ -1,5 +1,9 @@
 package com.etoc.mode.structural.decorator;
-
+/**
+ * ×°ÊÎÆ÷
+ * @author Administrator
+ *
+ */
 public class DecoratorPatternDemo {
 	public static void main(String[] args) {
 		 
