@@ -6,16 +6,16 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 /**
- * --Ô­ĞÍÉî¿½±´(ĞòÁĞ»¯,·´ĞòÁĞ»¯)
+ * --åŸå‹æ·±æ‹·è´(åºåˆ—åŒ–,ååºåˆ—åŒ–)
  * @author Administrator
  *
  */
 public class Prototype2 {
-	static class Student implements Serializable {// ÕâÀïÎªÁË¼òµ¥£¬Ö±½Ópublic£¬Êµ¼ÊÖĞ²»ÍÆ¼ö
+	static class Student implements Serializable {// è¿™é‡Œä¸ºäº†ç®€å•ï¼Œç›´æ¥publicï¼Œå®é™…ä¸­ä¸æ¨è
 		private static final long serialVersionUID = 6977402643848374753L;
-		// ÒòÎªÊµ¼ÊÓ¦ÓÃÖĞÀàÊÇ»á¸Ä¶¯µÄ£¬UIDÓÃÀ´ÅĞ¶ÏÀà°æ±¾£¬Ä¬ÈÏÎª1L;
+		// å› ä¸ºå®é™…åº”ç”¨ä¸­ç±»æ˜¯ä¼šæ”¹åŠ¨çš„ï¼ŒUIDç”¨æ¥åˆ¤æ–­ç±»ç‰ˆæœ¬ï¼Œé»˜è®¤ä¸º1L;
 		public int id = 12345;
-		public String name = "Ğ¡Ã÷";
+		public String name = "å°æ˜";
 		public Address address = new Address();
 
 		@Override
@@ -30,20 +30,20 @@ public class Prototype2 {
 			return "Address [name=" + name + "]";
 		}
 
-		public String name = "Î÷ºş";
+		public String name = "è¥¿æ¹–";
 	}
 
 	public static <T extends Serializable> T clone(T obj) throws Exception {
 		T cloneObj;
-		// Ğ´Èë×Ö½ÚÁ÷
+		// å†™å…¥å­—èŠ‚æµ
 		ByteArrayOutputStream out = new ByteArrayOutputStream();
 		ObjectOutputStream obs = new ObjectOutputStream(out);
 		obs.writeObject(obj);
 		obs.close();
-		// ·ÖÅäÄÚ´æ£¬Ğ´ÈëÔ­Ê¼¶ÔÏó£¬Éú³ÉĞÂ¶ÔÏó
+		// åˆ†é…å†…å­˜ï¼Œå†™å…¥åŸå§‹å¯¹è±¡ï¼Œç”Ÿæˆæ–°å¯¹è±¡
 		ByteArrayInputStream ios = new ByteArrayInputStream(out.toByteArray());
 		ObjectInputStream ois = new ObjectInputStream(ios);
-		// ·µ»ØÉú³ÉµÄĞÂ¶ÔÏó
+		// è¿”å›ç”Ÿæˆçš„æ–°å¯¹è±¡
 		cloneObj = (T) ois.readObject();
 		ois.close();
 		return cloneObj;

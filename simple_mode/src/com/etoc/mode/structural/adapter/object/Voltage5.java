@@ -1,7 +1,7 @@
 package com.etoc.mode.structural.adapter.object;
 
 /**
- * 介绍：dst接口：客户需要的5V电压 作者：liuxiaolong
+ * 浠嬬粛锛歞st鎺ュ彛锛氬鎴烽渶瑕佺殑5V鐢靛帇 浣滆�咃細liuxiaolong
  */
 
 public interface Voltage5 {

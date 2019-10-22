@@ -1,7 +1,7 @@
 package com.etoc.mode.creation.builder;
 
 /**
- * ½¨ÆÕÍ¨´óÂ¥
+ * å»ºæ™®é€šå¤§æ¥¼
  * 
  * @author Administrator
  *
@@ -11,20 +11,20 @@ public class BuilderVilla implements BuilderHouse {
 
 	@Override
 	public void Foundation() {
-		h.Foundation = "´ò×®,Õû°æ»ù´¡";
-		System.out.println("´ò×®,Õû°æ»ù´¡");
+		h.Foundation = "æ‰“æ¡©,æ•´ç‰ˆåŸºç¡€";
+		System.out.println("æ‰“æ¡©,æ•´ç‰ˆåŸºç¡€");
 	}
 
 	@Override
 	public void wall() {
-		h.wall = "ÓÃÅİÄ­×©½¨Ç½";
-		System.out.println("ÓÃÅİÄ­×©½¨Ç½");
+		h.wall = "ç”¨æ³¡æ²«ç –å»ºå¢™";
+		System.out.println("ç”¨æ³¡æ²«ç –å»ºå¢™");
 	}
 
 	@Override
 	public void capping() {
-		h.capping = "ÏÖ½½·â¶¥";
-		System.out.println("ÏÖ½½·â¶¥");
+		h.capping = "ç°æµ‡å°é¡¶";
+		System.out.println("ç°æµ‡å°é¡¶");
 	}
 
 	@Override

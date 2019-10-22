@@ -12,7 +12,7 @@ public class Employee{
 	   private int salary;
 	   
 	   private List<Employee> subordinates;
-	   //¹¹Ôìº¯Êý
+	   //æž„é€ å‡½æ•°
 	   public Employee(String name,String dept, int sal) {
 	      this.name = name;
 	      this.dept = dept;

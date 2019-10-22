@@ -1,18 +1,18 @@
 package com.etoc.mode.creation.prototype;
 /**
- * --ÊµÏÖCloneable 
+ * --å®ç°Cloneable 
  * @author Administrator
  *
  */
 public class Prototype {
-	static class Student implements Cloneable {// ÕâÀïÎªÁË¼òµ¥£¬Ö±½Ópublic£¬Êµ¼ÊÖĞ²»ÍÆ¼ö
+	static class Student implements Cloneable {// è¿™é‡Œä¸ºäº†ç®€å•ï¼Œç›´æ¥publicï¼Œå®é™…ä¸­ä¸æ¨è
 		@Override
 		public String toString() {
 			return "Student [id=" + id + ", name=" + name + ", address=" + address + "]";
 		}
 
 		public int id = 12345;
-		public String name = "Ğ¡Ã÷";
+		public String name = "å°æ˜";
 		public Address address = new Address();
 
 		@Override
@@ -24,7 +24,7 @@ public class Prototype {
 	}
 
 	static class Address implements Cloneable {
-		public String name = "Î÷ºş";
+		public String name = "è¥¿æ¹–";
 		@Override
 		public Address clone() throws CloneNotSupportedException {
 			return (Address) super.clone();
