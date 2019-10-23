@@ -1,11 +1,12 @@
 package com.etoc.mode.structural.bridge;
 
 public class RedCircle implements DrawAPI {
-
+   /**
+     * --画红色的画
+     */
 	@Override
-	public void drawCircle(int radius, int x, int y) {
-		  System.out.println("Drawing Circle[ color: red, radius: "
-			         + radius +", x: " +x+", "+ y +"]");
+	public void drawCircle() {
+		 System.out.println("画红色的画");
 	}
 
 }

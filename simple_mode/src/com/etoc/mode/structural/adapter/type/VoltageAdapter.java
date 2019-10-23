@@ -1,18 +1,18 @@
 package com.etoc.mode.structural.adapter.type;
 
 /**
- * ½éÉÜ£ºAdapterÀà£ºÍê³É220V-5VµÄ×ª±ä
- * Í¨¹ı¼Ì³ĞsrcÀà£¬ÊµÏÖ dst Àà½Ó¿Ú£¬Íê³Ésrc->dstµÄÊÊÅä¡£
- * ×÷Õß£ºliuxiaolong
+ * ä»‹ç»ï¼šAdapterç±»ï¼šå®Œæˆ220V-5Vçš„è½¬å˜
+ * é€šè¿‡ç»§æ‰¿srcç±»ï¼Œå®ç° dst ç±»æ¥å£ï¼Œå®Œæˆsrc->dstçš„é€‚é…ã€‚
+ * ä½œè€…ï¼šliuxiaolong
  */
 
 public class VoltageAdapter extends Voltage220 implements Voltage5 {
     @Override
     public int output5V() {
         int src = output220V();
-        System.out.println("ÊÊÅäÆ÷¹¤×÷¿ªÊ¼ÊÊÅäµçÑ¹");
+        System.out.println("é€‚é…å™¨å·¥ä½œå¼€å§‹é€‚é…ç”µå‹");
         int dst = src / 44;
-        System.out.println("ÊÊÅäÍê³ÉºóÊä³öµçÑ¹£º" + dst);
+        System.out.println("é€‚é…å®Œæˆåè¾“å‡ºç”µå‹ï¼š" + dst);
         return dst;
     }
 }

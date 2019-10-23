@@ -1,14 +1,14 @@
 package com.etoc.mode.structural.adapter.type;
 
 /**
- *  ½éÉÜ£ºsrcÀà: ÎÒÃÇÓĞµÄ220VµçÑ¹
- *  ×÷Õß£ºÁõĞ¡Áú
+ *  ä»‹ç»ï¼šsrcç±»: æˆ‘ä»¬æœ‰çš„220Vç”µå‹
+ *  ä½œè€…ï¼šåˆ˜å°é¾™
  */
 
 public class Voltage220 {
     public int output220V() {
         int src = 220;
-        System.out.println("ÎÒÊÇ" + src + "V");
+        System.out.println("æˆ‘æ˜¯" + src + "V");
         return src;
     }
 }

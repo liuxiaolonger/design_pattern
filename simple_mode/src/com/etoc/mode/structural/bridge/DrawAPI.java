@@ -1,5 +1,11 @@
 package com.etoc.mode.structural.bridge;
 
 public interface DrawAPI {
-	public void drawCircle(int radius, int x, int y);
+	/**
+	 *   - »­»­
+	 * @param radius
+	 * @param x
+	 * @param y
+	 */
+	public void drawCircle();
 }

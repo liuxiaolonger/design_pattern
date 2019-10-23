@@ -1,16 +1,14 @@
 package com.etoc.mode.structural.bridge;
 
-public class Circle extends Shape {
-	private int x, y, radius;
-
-	public Circle(int x, int y, int radius, DrawAPI drawAPI) {
+public class Circle extends AbsShape {
+	public Circle(DrawAPI drawAPI) {
 		super(drawAPI);
-		this.x = x;
-		this.y = y;
-		this.radius = radius;
 	}
 
-	public void draw() {
-		drawAPI.drawCircle(radius, x, y);
+	@Override
+	public void otherDraw() {
+		super.drawAPI.drawCircle();
+		System.out.println("画完挂墙上");
 	}
 }
+

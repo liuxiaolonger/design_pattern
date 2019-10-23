@@ -1,21 +1,21 @@
 package com.etoc.mode.structural.adapter.type;
 
 /**
- * ½éÉÜ£ºClientÀà£ºÊÖ»ú .ĞèÒª5VµçÑ¹
- *  ×÷Õß£ºliuxiaolong
+ * ä»‹ç»ï¼šClientç±»ï¼šæ‰‹æœº .éœ€è¦5Vç”µå‹
+ *  ä½œè€…ï¼šliuxiaolong
  */
 
 public class Mobile {
 	/**
-	 * ³äµç·½·¨
+	 * å……ç”µæ–¹æ³•
 	 *
 	 * @param voltage5
 	 */
 	public void charging(Voltage5 voltage5) {
 		if (voltage5.output5V() == 5) {
-			System.out.println("µçÑ¹¸Õ¸ÕºÃ5V£¬¿ªÊ¼³äµç");
+			System.out.println("ç”µå‹åˆšåˆšå¥½5Vï¼Œå¼€å§‹å……ç”µ");
 		} else if (voltage5.output5V() > 5) {
-			System.out.println("µçÑ¹³¬¹ı5V£¬¶¼ÉÁ¿ª ÎÒÒª±ä³Énote7ÁË");
+			System.out.println("ç”µå‹è¶…è¿‡5Vï¼Œéƒ½é—ªå¼€ æˆ‘è¦å˜æˆnote7äº†");
 		}
 	}
 }

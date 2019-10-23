@@ -1,5 +1,9 @@
 package com.etoc.mode.structural.composite;
-
+/**
+ *  CompositePattern   缁勫悎
+ * @author Administrator
+ *
+ */
 public class CompositePatternDemo {
 	   public static void main(String[] args) {
 		      Employee CEO = new Employee("John","CEO", 30000);
@@ -23,7 +27,7 @@ public class CompositePatternDemo {
 		      headMarketing.add(clerk1);
 		      headMarketing.add(clerk2);
 		 
-		      //打印该组织的所有员工
+		    
 		      System.out.println(CEO); 
 		      for (Employee headEmployee : CEO.getSubordinates()) {
 		         System.out.println(headEmployee);
