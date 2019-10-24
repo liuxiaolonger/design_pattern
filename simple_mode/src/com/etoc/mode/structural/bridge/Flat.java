@@ -6,11 +6,18 @@ package com.etoc.mode.structural.bridge;
  * @author Administrator
  *
  */
-public class BridgePatternDemo {
-	public static void main(String[] args) {
-		AbsShape redCircle = new Circle(new RedCircle());
-		AbsShape greenCircle = new Circle(new GreenCircle());
-		redCircle.otherDraw();
-		greenCircle.otherDraw();
+public class Flat extends AbsPhone {
+
+	public Flat(Brand brand) {
+		super(brand);
 	}
+
+	public void photograph() {
+		brand.photograph();
+	}
+
+	public void music() {
+		brand.music();
+	}
+
 }
